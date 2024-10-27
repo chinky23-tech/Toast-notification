@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+background-color: rgb(235, 224, 224);
+}
+h1{
+
+    color: darkgrey;
+
+}
+.container{
+    background-color: black;
+    width: 50%;
+    height:  50vh;
+    color: white;
+    padding: 2em;
+}
+.button-section{
+    margin-top: 1em;
+    
+}
+.btn{
+    padding: 5px 10px;
+    margin:5px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 2px;
+    font-weight: 600;
+}
+#btn1{background-color: green; border-color: green;}
+#btn2{background-color: red; border-color: red;}
+#btn3{background-color: yellowgreen; border-color:yellowgreen; color: black;}
+#btn4{background-color: orange; border-color: orange;}
+
+#btn1:hover{
+background-color:  green;
+cursor: pointer;
+border: green;
+color: white;
+}
+#btn2:hover{
+    background-color:  orangered;
+    cursor: pointer;
+    border: orangered;
+    color: black;
+    }
+
+    #btn3:hover{
+        background-color:  rgb(35, 250, 35);
+        cursor: pointer;
+        border:  rgb(35, 250, 35);;
+        color: black;
+        }
+
+        #btn4:hover{
+            background-color:  blueviolet;
+            cursor: pointer;
+            border: blueviolet;
+            color: white;
+            }
+            .toast-overlay{
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                padding: 1em 2em;
+                background-color: #333;
+                color: white;
+                border-radius: 5px;
+                opacity: 0;
+                transition: opacity 0.3 ease, transform 0.3 ease;
+                transform: translateY(50px);
+            }
+            .toast-show{
+                opacity: 1;
+                transform: translateY(0);
+            }
